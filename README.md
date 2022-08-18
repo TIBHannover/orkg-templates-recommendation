@@ -1,92 +1,199 @@
-# ORKG Templates Recommendation
+# ORKG-NLP Service Template
 
-Experimental code-base of the ORKG Templates Recommendation service
+## Overview
 
-## Getting started
+### Aims
+This service aims to foster constructing the ORKG using predefined set of predicates that
+are represented by semantic building blocks called **Templates**. This directs ORKG
+users to converge towards selecting predicates added by domain experts while not preventing
+them from adding new ones / selecting other ones, as the crowdsourcing concept of the 
+ORKG suggests.
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+### Approach
+To this end, two approaches are implemented and experimented for this particular service
+and their results are shown. For the service integration / production we select the best.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+1. **Elasticsearch (ES):** An index document is represented by {template}-{paper} concatenation.
+   In query time, a query represented by a {paper} should result with {template}s. Trained on `data/processed/es_training_set.json`.
+2. **SciBERT NLI (Natural Language Inference)**: A training instance is represented by 
+    {premise}-{hypothesis} equivalent to {template}-{paper} pairs. In query time, a hypothesis
+    query (paper) should result with entailed {premise}s (templates.). Trained on `data/processed/training_set.json`.
 
-## Add your files
+We also implemented a ``baseline`` on which the current ORKG-UI depends, where templates are recommended based
+on the research field they belong to. In other words, the baseline groups templates by their research field and 
+recommends all templates to a query paper that have the same paper's research field. We build the groups depending on
+two datasets:
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
+* `baseline`: `data/processed/dataset.json` same dataset used for our approaches (before splitting),
+   that has selected templates based on some criteria.
+* `baseline_full`: `data/raw/baseline_templates.json` includes all templates in the ORKG.
 
+
+### Dataset
+The dataset is created by fetching templated papers (ORKG papers structured using ORKG templates) and untemplated papers
+with same (or very similar) distribution as the templated ones. Papers abstracts were fetched from the
+[ORKG papers dump](https://git.tib.eu/orkg/orkg-papers).
+
+#### Statistics 
+> The following statistics are manually summarized based on the output of `src.data.main.py` script.
+
+| Templates | Templated Papers | Neutral Papers | Templates Research Fields | Neutral Research Fields |
+|-----------|------------------|----------------|---------------------------|-------------------------|
+| 23        | 487              | 487            | 25                        | 25                      |
+
+
+| \               | Training (supervised) | Validation (supervised) | Training (unsupervised) | Test Set |
+|-----------------|-----------------------|-------------------------|-------------------------|----------|
+| Entailments     | 351                   | 39                      | 390                     | 92       |
+| Contradictions  | 1230                  | 137                     | 0                       | 0        |
+| Neutrals        | 351                   | 39                      | 390                     | 97       |
+| Total           | 1932                  | 215                     | 780                     | 189      |
+
+#### Plots
+* [All papers distribution over research fields](./data/processed/all_papers_research_fields.png)
+* [Templated papers distribution over research fields](./data/processed/papers_research_fields.png)
+* [Neutral papers distribution over research fields](./data/processed/neutral_papers_research_fields.png)
+* [Templates distribution over research fields with number of papers](./data/processed/templates_research_fields_intersection.png)
+
+### Evaluation
+
+In the experimental setup we only took the top-1 result of the service response for a fair
+comparison, since Elasticsearch always returns so many results that we cannot rely on for
+the normalization.
+
+> Note that all approaches are evaluated on `data/processed/test_set.json`
+
+#### Results
+
+| \             | Precision | Recall | F1-Score |
+|---------------|-----------|--------|----------|
+| Baseline      | 42.8%     | 42.8%  | 42.8%    |
+| Baseline_full | 8.9%      | 8.9%   | 8.9%     |
+| Elasticsearch | 29.1%     | 29.1%  | 29.1%    |
+| SciBERT       | 64.1%     | 62.4%  | 63.2%    |
+
+
+#### Plots
+* [Baseline F1-score over research fields](./data/processed/baseline_results.png)
+* [Baseline_full F1-score over research fields](./data/processed/baseline_full_results.png)
+* [ES F1-score over research fields](./data/processed/es_results.png)
+* [SciBERT F1-score over research fields](./data/processed/scibert_results.png)
+
+### Limitations 
+Training the SciBERT model cannot be done on a CPU since it includes a lot of computations.
+Therefore, the notebook ``notebooks/templates_recommendation_training.ipynb`` is provided that
+can be run on ``Google Colab`` using a TPU which does take no more than 30 minutes.
+
+## How to Run
+
+### Prerequisites
+
+#### Software Dependencies
+* Python version ``^3.7.1``.
+* ``docker-compose`` (to run a local ES cluster).
+
+#### Hardware Resources
+These resources were provided on an instance of Google Colab and were partially used to 
+train the SciBERT model. 
+
+* RAM ``12 GB``
+* Storage ``107 GB`` 
+* Processor ``TPU``
+
+### Cloning the repository
+
+```commandline
+git clone https://gitlab.com/TIBHannover/orkg/nlp/experiments/orkg-templates-recommendation.git
+cd orkg-templates-recommendation
+pip install -r requirements.txt
 ```
-cd existing_repo
-git remote add origin https://gitlab.com/TIBHannover/orkg/nlp/experiments/orkg-templates-recommendation.git
-git branch -M main
-git push -uf origin main
+
+The repository includes the python script `src/main.py` which is a commandline tool responsible for doing all possible
+tasks. The tool has the following syntax: 
+
+```commandline
+usage: main.py [-h] -t {dataset,train,evaluate,predict}
+               [-a {elasticsearch,scibert,baseline,baseline_full}]
+               [-trainp TRAINING_SET_PATH] [-testp TEST_SET_PATH] [-q QUERY]
+               [-n N_RESULTS]
 ```
 
-## Integrate with your tools
+for full documentation, please type
 
-- [ ] [Set up project integrations](https://gitlab.com/TIBHannover/orkg/nlp/experiments/orkg-templates-recommendation/-/settings/integrations)
+```commandline
+python -m src.main -h
+```
 
-## Collaborate with your team
+### Data Creation
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Automatically merge when pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+The following command will fetch the data from the ORKG, create a dataset, analyse and split it to train and test
+sets. The output folders are fixed and cannot be configured, which are:
 
-## Test and Deploy
+* `data/raw/` and
+* `data/processed/`.
 
-Use the built-in continuous integration in GitLab.
+```commandline
+python -m src.main -t dataset
+```
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing(SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
 
-***
+### Service Retraining
 
-# Editing this README
+#### Elasticsearch
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thank you to [makeareadme.com](https://www.makeareadme.com/) for this template.
+A docker-compose file is provided to run an Elasticsearch index cluster on your ``localhost:9200``.
+```commandline
+docker-compose up
+python -m src.main -t train -a elasticsearch -trainp ./data/processed/es_training_set.json
+```
 
-## Suggestions for a good README
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+#### Baseline (full)
 
-## Name
-Choose a self-explaining name for your project.
+```commandline
+python -m src.main -t train -a baseline -trainp ./data/processed/dataset.json
+```
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+or 
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+```commandline
+python -m src.main -t train -a baseline_full -trainp ./data/raw/baseline_templates.json
+```
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+#### SciBERT NLI
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+Use `notebooks/templates_recommendation_training.ipynb` on Google Colab with a TPU runtime instance to train the model.
+Please follow the `TODO` instructions there and consider downloading the model with the `transformers.PretrainedModel` format
+to the `models/` directory when you are done, so that it can be used for evaluation.
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+### Service Evaluation
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+```commandline
+python -m src.main -t evaluate -a <any-approach> -testp ./data/processed/test_set.json
+```
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+### Service Integration
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+Note that the baseline approach requires a research field ID as a query.
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+```commandline
+python -m src.main -t predict -a <any-approach> -q "your text"
+```
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+
+## Contribution
+This service is developed and maintained by
+
+* Arab Oghli, Omar <omar.araboghli@tib.eu>
+
+under supervision of
+* D'Souza, Jennifer <jennifer.dsouza@tib.eu>
+* Auer, Sören <auer@tib.eu>
 
 ## License
-For open source projects, say how it is licensed.
+[CC BY-NC 3.0 DE](https://creativecommons.org/licenses/by-nc/3.0/de/)
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+## References
+
+* [Information Retrieval Service Aspects of the Open Research Knowledge Graph](https://doi.org/10.15488/11834)
+
