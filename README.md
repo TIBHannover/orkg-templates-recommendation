@@ -11,16 +11,16 @@ ORKG suggests.
 
 ### Approach
 To this end, two approaches are implemented and experimented for this particular service
-and their results are shown. For the service integration / production we select the best.
+and their results are shown. For the service integration/production we select the best.
 
-1. **Elasticsearch (ES):** An index document is represented by {template}-{paper} concatenation.
+1. [**Elasticsearch (ES)**](https://www.elastic.co/): An index document is represented by {template}-{paper} concatenation.
    In query time, a query represented by a {paper} should result with {template}s. Trained on `data/processed/es_training_set.json`.
-2. **SciBERT NLI (Natural Language Inference)**: A training instance is represented by 
+2. **[SciBERT](https://aclanthology.org/D19-1371/) NLI (Natural Language Inference)**: A training instance is represented by 
     {premise}-{hypothesis} equivalent to {template}-{paper} pairs. In query time, a hypothesis
-    query (paper) should result with entailed {premise}s (templates.). Trained on `data/processed/training_set.json`.
+    query (paper) should result with entailed {premise}s (templates). Trained on `data/processed/training_set.json`.
 
-We also implemented a ``baseline`` on which the current ORKG-UI depends, where templates are recommended based
-on the research field they belong to. In other words, the baseline groups templates by their research field and 
+We also implemented a ``baseline`` on that the current ORKG-UI depends on, where templates are recommended based
+on the ``research field`` that they belong to. In other words, the baseline groups templates by their research field and 
 recommends all templates to a query paper that have the same paper's research field. We build the groups depending on
 two datasets:
 
@@ -30,9 +30,9 @@ two datasets:
 
 
 ### Dataset
-The dataset is created by fetching templated papers (ORKG papers structured using ORKG templates) and untemplated papers
+The dataset is created by fetching templated papers (ORKG papers structured (even partially) using ORKG templates) and untemplated papers
 with same (or very similar) distribution as the templated ones. Papers abstracts were fetched from the
-[ORKG papers dump](https://git.tib.eu/orkg/orkg-papers).
+[ORKG papers dump](TODO_direct_download_link).
 
 #### Statistics 
 > The following statistics are manually summarized based on the output of `src.data.main.py` script.
@@ -50,10 +50,13 @@ with same (or very similar) distribution as the templated ones. Papers abstracts
 | Total           | 1932                  | 215                     | 780                     | 189      |
 
 #### Plots
-* [All papers distribution over research fields](./data/processed/all_papers_research_fields.png)
-* [Templated papers distribution over research fields](./data/processed/papers_research_fields.png)
-* [Neutral papers distribution over research fields](./data/processed/neutral_papers_research_fields.png)
-* [Templates distribution over research fields with number of papers](./data/processed/templates_research_fields_intersection.png)
+
+| Original                                                                                                                         | Preview                                                                                           |
+|----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| [All papers distribution over research fields](./data/processed/all_papers_research_fields.png)                                  | <img src="./data/processed/all_papers_research_fields.png"  width="280" height="150">             |
+| [Templated papers distribution over research fields](./data/processed/papers_research_fields.png)                                | <img src="./data/processed/papers_research_fields.png"  width="280" height="150">                 |
+| [Neutral papers distribution over research fields](./data/processed/neutral_papers_research_fields.png)                          | <img src="./data/processed/neutral_papers_research_fields.png"  width="280" height="150">         |
+| [Templates distribution over research fields with number of papers](./data/processed/templates_research_fields_intersection.png) | <img src="./data/processed/templates_research_fields_intersection.png"  width="280" height="150"> |
 
 ### Evaluation
 
@@ -74,10 +77,13 @@ the normalization.
 
 
 #### Plots
-* [Baseline F1-score over research fields](./data/processed/baseline_results.png)
-* [Baseline_full F1-score over research fields](./data/processed/baseline_full_results.png)
-* [ES F1-score over research fields](./data/processed/es_results.png)
-* [SciBERT F1-score over research fields](./data/processed/scibert_results.png)
+
+| Original                                                                                                          | Preview                                                                          |
+|-------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| [Baseline F1-score over research fields](./data/processed/baseline_results.png)                                   | <img src="./data/processed/baseline_results.png"  width="280" height="150">      |
+| [Baseline_full F1-score over research fields](./data/processed/baseline_full_results.png)                         | <img src="./data/processed/baseline_full_results.png"  width="280" height="150"> |
+| [ES F1-score over research fields](./data/processed/es_results.png)                                               | <img src="./data/processed/es_results.png"  width="280" height="150">            |
+| [SciBERT F1-score over research fields](./data/processed/scibert_results.png)                                     | <img src="./data/processed/scibert_results.png"  width="280" height="150">       |
 
 ### Limitations 
 Training the SciBERT model cannot be done on a CPU since it includes a lot of computations.
@@ -90,7 +96,7 @@ can be run on ``Google Colab`` using a TPU which does take no more than 30 minut
 
 #### Software Dependencies
 * Python version ``^3.7.1``.
-* ``docker-compose`` (to run a local ES cluster).
+* ``docker-compose`` (to run a local ES instance).
 
 #### Hardware Resources
 These resources were provided on an instance of Google Colab and were partially used to 
@@ -162,8 +168,9 @@ python -m src.main -t train -a baseline_full -trainp ./data/raw/baseline_templat
 #### SciBERT NLI
 
 Use `notebooks/templates_recommendation_training.ipynb` on Google Colab with a TPU runtime instance to train the model.
-Please follow the `TODO` instructions there and consider downloading the model with the `transformers.PretrainedModel` format
-to the `models/` directory when you are done, so that it can be used for evaluation.
+Please follow the `TODO` instructions there and consider downloading the model with the 
+[`transformers.PretrainedModel`](https://huggingface.co/docs/transformers/v4.21.1/en/main_classes/model#transformers.PreTrainedModel)
+format to the `models/` directory when you are done, so that it can be used for evaluation.
 
 
 ### Service Evaluation
@@ -191,9 +198,11 @@ under supervision of
 * Auer, Sören <auer@tib.eu>
 
 ## License
-[CC BY-NC 3.0 DE](https://creativecommons.org/licenses/by-nc/3.0/de/)
+[MIT](./LICENSE)
 
 ## References
 
 * [Information Retrieval Service Aspects of the Open Research Knowledge Graph](https://doi.org/10.15488/11834)
+* [Elasticsearch](https://www.elastic.co/)
+* [SciBERT: A Pretrained Language Model for Scientific Text](https://aclanthology.org/D19-1371/)
 
