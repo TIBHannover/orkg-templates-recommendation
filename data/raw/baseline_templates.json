@@ -1,0 +1,3314 @@
+{
+    "templates": [
+        {
+            "id": "R107684",
+            "label": "Health Persuasion",
+            "research_fields": [
+                {
+                    "id": "R293",
+                    "label": "Health Communication"
+                }
+            ]
+        },
+        {
+            "id": "R107801",
+            "label": "Leaderboard",
+            "research_fields": [
+                {
+                    "id": "R132",
+                    "label": "Computer Sciences"
+                }
+            ]
+        },
+        {
+            "id": "R107811",
+            "label": "Benchmark",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R107816",
+            "label": "Evaluation",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R108008",
+            "label": "Business architecture",
+            "research_fields": [
+                {
+                    "id": "R134",
+                    "label": "Computer and Systems Architecture"
+                }
+            ]
+        },
+        {
+            "id": "R108239",
+            "label": "KM-Oriented Enterprise Modeling Approaches",
+            "research_fields": [
+                {
+                    "id": "R134",
+                    "label": "Computer and Systems Architecture"
+                }
+            ]
+        },
+        {
+            "id": "R108555",
+            "label": "Machine Learning Experiment",
+            "research_fields": [
+                {
+                    "id": "R133",
+                    "label": "Artificial Intelligence"
+                },
+                {
+                    "id": "R140",
+                    "label": "Software Engineering"
+                }
+            ]
+        },
+        {
+            "id": "R111155",
+            "label": "Comparison",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R111220",
+            "label": "Scenario Factsheet",
+            "research_fields": [
+                {
+                    "id": "R267",
+                    "label": "Energy Systems"
+                }
+            ]
+        },
+        {
+            "id": "R111221",
+            "label": "Scenario Factsheet",
+            "research_fields": [
+                {
+                    "id": "R267",
+                    "label": "Energy Systems"
+                }
+            ]
+        },
+        {
+            "id": "R111231",
+            "label": "Empirical Data in Scenario Factsheet",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R111258",
+            "label": "Scsdf",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R111267",
+            "label": "EmpiricalData",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R111494",
+            "label": "Assumptions in Scenario Factsheet",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R111507",
+            "label": "Energy Savings",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R111540",
+            "label": "Emission reductions",
+            "research_fields": [
+                {
+                    "id": "R267",
+                    "label": "Energy Systems"
+                }
+            ]
+        },
+        {
+            "id": "R111820",
+            "label": "Potential",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R111871",
+            "label": "Development aspect",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R111911",
+            "label": "Share RE",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R111947",
+            "label": "Results in Scenario Factsheet",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R112241",
+            "label": "Study in Scenario Factsheet",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R12002",
+            "label": "Student's t-test",
+            "research_fields": [
+                {
+                    "id": "R11",
+                    "label": "Science"
+                }
+            ]
+        },
+        {
+            "id": "R12006",
+            "label": "p-value",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R12008",
+            "label": "Scalar value specification",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R12014",
+            "label": "Study design dependent variable",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R135229",
+            "label": "Model Factsheet",
+            "research_fields": [
+                {
+                    "id": "R267",
+                    "label": "Energy Systems"
+                }
+            ]
+        },
+        {
+            "id": "R135242",
+            "label": "Model Integration in Model Factsheet",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R135372",
+            "label": "Mathematical Properties in Model Factsheet",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R135385",
+            "label": "Computational requirements",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R135394",
+            "label": "Model class",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R135413",
+            "label": "Software in Model Factsheet",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R135416",
+            "label": "Basic Information in Model Factsheet",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R135770",
+            "label": "Openness in Model Factsheet",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R135799",
+            "label": "References in Model Factsheet",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R135811",
+            "label": "Coverage in Model Factsheet",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R135885",
+            "label": "Particle size of nanoparticles",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R136324",
+            "label": "Data",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R136332",
+            "label": "Software",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R136348",
+            "label": "Spatial resolution",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R136364",
+            "label": "Technologies in Model Factsheet",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R136400",
+            "label": "Software documentation",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R136421",
+            "label": "Communication Neuroscience Standard Template",
+            "research_fields": [
+                {
+                    "id": "R111778",
+                    "label": "Communication Neuroscience"
+                }
+            ]
+        },
+        {
+            "id": "R137220",
+            "label": "Components for power generation or conversion ",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R137223",
+            "label": "Components for transfer, infrastructure or grid ",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R137248",
+            "label": "Period",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R137483",
+            "label": "Zeta potential",
+            "research_fields": [
+                {
+                    "id": "R67",
+                    "label": "Medicinal Chemistry and Pharmaceutics"
+                }
+            ]
+        },
+        {
+            "id": "R138077",
+            "label": "Ontology learning from data sources",
+            "research_fields": [
+                {
+                    "id": "R133",
+                    "label": "Artificial Intelligence"
+                },
+                {
+                    "id": "R141823",
+                    "label": "Semantic Web"
+                }
+            ]
+        },
+        {
+            "id": "R138668",
+            "label": "Psychiatric Disorders AI Overview",
+            "research_fields": [
+                {
+                    "id": "R104",
+                    "label": "Bioinformatics"
+                },
+                {
+                    "id": "R133",
+                    "label": "Artificial Intelligence"
+                }
+            ]
+        },
+        {
+            "id": "R141160",
+            "label": "Smart city governance research scheme",
+            "research_fields": [
+                {
+                    "id": "R374",
+                    "label": "Urban Studies and Planning"
+                }
+            ]
+        },
+        {
+            "id": "R141481",
+            "label": "Indicator type",
+            "research_fields": [
+                {
+                    "id": "R374",
+                    "label": "Urban Studies and Planning"
+                }
+            ]
+        },
+        {
+            "id": "R141501",
+            "label": "Sustainability balance ",
+            "research_fields": [
+                {
+                    "id": "R374",
+                    "label": "Urban Studies and Planning"
+                }
+            ]
+        },
+        {
+            "id": "R141512",
+            "label": "Smartness balance",
+            "research_fields": [
+                {
+                    "id": "R374",
+                    "label": "Urban Studies and Planning"
+                }
+            ]
+        },
+        {
+            "id": "R141789",
+            "label": "Author",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R142600",
+            "label": "Ontologies reused",
+            "research_fields": [
+                {
+                    "id": "R374",
+                    "label": "Urban Studies and Planning"
+                }
+            ]
+        },
+        {
+            "id": "R143669",
+            "label": "Ontology description",
+            "research_fields": [
+                {
+                    "id": "R141823",
+                    "label": "Semantic Web"
+                }
+            ]
+        },
+        {
+            "id": "R144385",
+            "label": "Particle size",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R144388",
+            "label": "Particle size",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R144395",
+            "label": "Zeta Potential",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R145120",
+            "label": "Spectral lines broadening in plasmas",
+            "research_fields": [
+                {
+                    "id": "R175",
+                    "label": "Atomic, Molecular and Optical Physics"
+                }
+            ]
+        },
+        {
+            "id": "R145125",
+            "label": "Line broadening in plasmas property",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R145131",
+            "label": "Plasma measurements",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R145451",
+            "label": "Plasma measurement",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R145480",
+            "label": "Plasma characteristics",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R146014",
+            "label": "Prior studies that employed EA and/or digital transformation",
+            "research_fields": [
+                {
+                    "id": "R374",
+                    "label": "Urban Studies and Planning"
+                }
+            ]
+        },
+        {
+            "id": "R146398",
+            "label": "Recommendation for smart city (Smart people)",
+            "research_fields": [
+                {
+                    "id": "R374",
+                    "label": "Urban Studies and Planning"
+                }
+            ]
+        },
+        {
+            "id": "R146876",
+            "label": "Organic solar cells",
+            "research_fields": [
+                {
+                    "id": "R126",
+                    "label": "Materials Chemistry"
+                }
+            ]
+        },
+        {
+            "id": "R147035",
+            "label": "Ontology learning from text",
+            "research_fields": [
+                {
+                    "id": "R133",
+                    "label": "Artificial Intelligence"
+                },
+                {
+                    "id": "R141823",
+                    "label": "Semantic Web"
+                }
+            ]
+        },
+        {
+            "id": "R147046",
+            "label": "Knowledge source",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R147048",
+            "label": "Evaluation metric",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R147750",
+            "label": "LUMO",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R147753",
+            "label": "HOMO",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R147756",
+            "label": "Chemical",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R147760",
+            "label": "Organic solar cells property",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R147762",
+            "label": "Energy band gap",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R147765",
+            "label": "Open circuit voltage",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R147768",
+            "label": "Short-circuit current density",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R147771",
+            "label": "Fill factor",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R147774",
+            "label": "Power conversion efficiency",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R147777",
+            "label": "Mobility type",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R147822",
+            "label": "LUMO",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R147834",
+            "label": "Power conversion efficiency",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R147892",
+            "label": "Number",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R148387",
+            "label": "Permeation flux",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R149061",
+            "label": "Biodiversity inventories with DNA barcoding",
+            "research_fields": [
+                {
+                    "id": "R136127",
+                    "label": "Ecology and Biodiversity of Animals and Ecosystems, Organismic Interactions"
+                },
+                {
+                    "id": "R136191",
+                    "label": "Ecology and Biodiversity of Plants and Ecosystems"
+                }
+            ]
+        },
+        {
+            "id": "R149146",
+            "label": "E-government competences",
+            "research_fields": [
+                {
+                    "id": "R374",
+                    "label": "Urban Studies and Planning"
+                }
+            ]
+        },
+        {
+            "id": "R149514",
+            "label": "Geographic scale (square kilometers)",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R149560",
+            "label": "Maximum intraspecific distances averaged",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R149601",
+            "label": "Nearest neighbor distance averaged",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R150040",
+            "label": "VirInf",
+            "research_fields": [
+                {
+                    "id": "R52",
+                    "label": "Microbiology"
+                }
+            ]
+        },
+        {
+            "id": "R150089",
+            "label": "Epidemiological surveillance systems design and implementation",
+            "research_fields": [
+                {
+                    "id": "R278",
+                    "label": "Information Science"
+                }
+            ]
+        },
+        {
+            "id": "R150408",
+            "label": "Model",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R150425",
+            "label": "Model",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R150595",
+            "label": "Tailored Forming Contribution",
+            "research_fields": [
+                {
+                    "id": "R137654",
+                    "label": "Mechanical Process Engineering"
+                }
+            ]
+        },
+        {
+            "id": "R150607",
+            "label": "Tailored Forming Process Plan",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R150685",
+            "label": "Tailored Forming Material",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R150770",
+            "label": "Tailored Forming Process Step",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R150790",
+            "label": "Tailored Forming Manufacturing Method",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R150831",
+            "label": "Indicator type",
+            "research_fields": [
+                {
+                    "id": "R374",
+                    "label": "Urban Studies and Planning"
+                }
+            ]
+        },
+        {
+            "id": "R150886",
+            "label": "Qualities",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R150897",
+            "label": "Tailored Forming Quality",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R151016",
+            "label": "Xray laser",
+            "research_fields": [
+                {
+                    "id": "R185",
+                    "label": "Plasma and Beam Physics"
+                }
+            ]
+        },
+        {
+            "id": "R151017",
+            "label": "System qualities",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R151034",
+            "label": "System sub quality",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R151044",
+            "label": "System sub qualities",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R151398",
+            "label": " parameter type twin cities",
+            "research_fields": [
+                {
+                    "id": "R374",
+                    "label": "Urban Studies and Planning"
+                }
+            ]
+        },
+        {
+            "id": "R151998",
+            "label": "Learning experimentation",
+            "research_fields": [
+                {
+                    "id": "R136096",
+                    "label": "Educational Research"
+                }
+            ]
+        },
+        {
+            "id": "R152160",
+            "label": "Installed capacity",
+            "research_fields": [
+                {
+                    "id": "R267",
+                    "label": "Energy Systems"
+                }
+            ]
+        },
+        {
+            "id": "R152170",
+            "label": "Electricity generation",
+            "research_fields": [
+                {
+                    "id": "R267",
+                    "label": "Energy Systems"
+                }
+            ]
+        },
+        {
+            "id": "R152828",
+            "label": "Xray laser pumped",
+            "research_fields": [
+                {
+                    "id": "R185",
+                    "label": "Plasma and Beam Physics"
+                }
+            ]
+        },
+        {
+            "id": "R153113",
+            "label": "Scenario",
+            "research_fields": [
+                {
+                    "id": "R267",
+                    "label": "Energy Systems"
+                }
+            ]
+        },
+        {
+            "id": "R153118",
+            "label": "Goal",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R154384",
+            "label": "Temperature",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R154386",
+            "label": "Pressure",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R154388",
+            "label": "Has value",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R154390",
+            "label": "Lignin decomposition",
+            "research_fields": [
+                {
+                    "id": "R129",
+                    "label": "Organic Chemistry"
+                }
+            ]
+        },
+        {
+            "id": "R154474",
+            "label": "Photocatalytic application",
+            "research_fields": [
+                {
+                    "id": "R129",
+                    "label": "Organic Chemistry"
+                }
+            ]
+        },
+        {
+            "id": "R155470",
+            "label": "Paper",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R155837",
+            "label": "Wavelength",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R155839",
+            "label": "lifetime",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R155841",
+            "label": "Potential",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R155844",
+            "label": "Photocatalysts",
+            "research_fields": [
+                {
+                    "id": "R130",
+                    "label": "Physical Chemistry"
+                }
+            ]
+        },
+        {
+            "id": "R156124",
+            "label": "Summary of Different Perspectives on the Digital Twin",
+            "research_fields": [
+                {
+                    "id": "R137681",
+                    "label": "Information Systems, Process and Knowledge Management"
+                }
+            ]
+        },
+        {
+            "id": "R156239",
+            "label": "Contribution (old)",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R156306",
+            "label": "Research objective",
+            "research_fields": [
+                {
+                    "id": "R185",
+                    "label": "Plasma and Beam Physics"
+                }
+            ]
+        },
+        {
+            "id": "R159178",
+            "label": "Measurement Value",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R159190",
+            "label": "Measurement range",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R159270",
+            "label": "Tailore Forming Component",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R159280",
+            "label": "Tailored Forming Layer",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R159388",
+            "label": "Linked Data DOI Source Capture Methods",
+            "research_fields": [
+                {
+                    "id": "R117",
+                    "label": "Instrumentation"
+                },
+                {
+                    "id": "R12",
+                    "label": "Life Sciences"
+                },
+                {
+                    "id": "R122",
+                    "label": "Chemistry"
+                },
+                {
+                    "id": "R114146",
+                    "label": "Other Quantitative Biology"
+                },
+                {
+                    "id": "R114147",
+                    "label": "Quantitative Methods)"
+                },
+                {
+                    "id": "R136129",
+                    "label": "Metabolism, Biochemistry and Genetics of Microorganisms"
+                },
+                {
+                    "id": "R141823",
+                    "label": "Semantic Web"
+                }
+            ]
+        },
+        {
+            "id": "R159441",
+            "label": "City Digital Twin Potentials",
+            "research_fields": [
+                {
+                    "id": "R137681",
+                    "label": "Information Systems, Process and Knowledge Management"
+                }
+            ]
+        },
+        {
+            "id": "R159503",
+            "label": "Measurement",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R159533",
+            "label": "Measurement method",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R160259",
+            "label": "Digital city twin review",
+            "research_fields": [
+                {
+                    "id": "R137681",
+                    "label": "Information Systems, Process and Knowledge Management"
+                }
+            ]
+        },
+        {
+            "id": "R160868",
+            "label": "Tip diameter",
+            "research_fields": [
+                {
+                    "id": "R67",
+                    "label": "Medicinal Chemistry and Pharmaceutics"
+                }
+            ]
+        },
+        {
+            "id": "R160872",
+            "label": "Basal diameter",
+            "research_fields": [
+                {
+                    "id": "R67",
+                    "label": "Medicinal Chemistry and Pharmaceutics"
+                }
+            ]
+        },
+        {
+            "id": "R160876",
+            "label": "Total height of Microneedles",
+            "research_fields": [
+                {
+                    "id": "R67",
+                    "label": "Medicinal Chemistry and Pharmaceutics"
+                }
+            ]
+        },
+        {
+            "id": "R160880",
+            "label": "Insulin loaded height of microneedles",
+            "research_fields": [
+                {
+                    "id": "R67",
+                    "label": "Medicinal Chemistry and Pharmaceutics"
+                }
+            ]
+        },
+        {
+            "id": "R160884",
+            "label": "microneedle ",
+            "research_fields": [
+                {
+                    "id": "R67",
+                    "label": "Medicinal Chemistry and Pharmaceutics"
+                }
+            ]
+        },
+        {
+            "id": "R160901",
+            "label": "insulin content",
+            "research_fields": [
+                {
+                    "id": "R67",
+                    "label": "Medicinal Chemistry and Pharmaceutics"
+                }
+            ]
+        },
+        {
+            "id": "R160910",
+            "label": "Insulin dose",
+            "research_fields": [
+                {
+                    "id": "R67",
+                    "label": "Medicinal Chemistry and Pharmaceutics"
+                }
+            ]
+        },
+        {
+            "id": "R160920",
+            "label": "Peak insulin concentration",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R160935",
+            "label": "Time to peak insulin concentration;",
+            "research_fields": [
+                {
+                    "id": "R67",
+                    "label": "Medicinal Chemistry and Pharmaceutics"
+                }
+            ]
+        },
+        {
+            "id": "R160941",
+            "label": "Relative bioavailability",
+            "research_fields": [
+                {
+                    "id": "R67",
+                    "label": "Medicinal Chemistry and Pharmaceutics"
+                }
+            ]
+        },
+        {
+            "id": "R160949",
+            "label": "minimum glucose level",
+            "research_fields": [
+                {
+                    "id": "R67",
+                    "label": "Medicinal Chemistry and Pharmaceutics"
+                }
+            ]
+        },
+        {
+            "id": "R160954",
+            "label": "Time to minimum glucose level",
+            "research_fields": [
+                {
+                    "id": "R67",
+                    "label": "Medicinal Chemistry and Pharmaceutics"
+                }
+            ]
+        },
+        {
+            "id": "R160959",
+            "label": "Relative pharmacological availability ",
+            "research_fields": [
+                {
+                    "id": "R67",
+                    "label": "Medicinal Chemistry and Pharmaceutics"
+                }
+            ]
+        },
+        {
+            "id": "R161140",
+            "label": "Melting temperature",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R161143",
+            "label": "Glass-transition temperature",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R161146",
+            "label": "Crystallinity",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R161149",
+            "label": "Life span",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R161153",
+            "label": "Polymer properties",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R161205",
+            "label": "Property polymers",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R161210",
+            "label": "Melting temperature",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R161223",
+            "label": "Property",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R161228",
+            "label": "polymers",
+            "research_fields": [
+                {
+                    "id": "R131",
+                    "label": "Polymer Chemistry"
+                }
+            ]
+        },
+        {
+            "id": "R161242",
+            "label": "Life span",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R161307",
+            "label": "molecular weight",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R161310",
+            "label": "Enzyme",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R161312",
+            "label": "Enzymatic degradation of polymers",
+            "research_fields": [
+                {
+                    "id": "R131",
+                    "label": "Polymer Chemistry"
+                }
+            ]
+        },
+        {
+            "id": "R161354",
+            "label": "time",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R161531",
+            "label": "recycling",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R161534",
+            "label": "treatment",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R161545",
+            "label": "Recycling methods",
+            "research_fields": [
+                {
+                    "id": "R131",
+                    "label": "Polymer Chemistry"
+                }
+            ]
+        },
+        {
+            "id": "R161556",
+            "label": "recycling type",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R161736",
+            "label": "Xray laser applications",
+            "research_fields": [
+                {
+                    "id": "R114008",
+                    "label": "Applied Physics"
+                }
+            ]
+        },
+        {
+            "id": "R161794",
+            "label": "Plasma measurement 1",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R162383",
+            "label": "Benchmark Dataset Resource Template",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R163149",
+            "label": "AutoML",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R163797",
+            "label": "Domain Adaptation in AI",
+            "research_fields": [
+                {
+                    "id": "R133",
+                    "label": "Artificial Intelligence"
+                },
+                {
+                    "id": "R112125",
+                    "label": "Machine Learning"
+                },
+                {
+                    "id": "R145261",
+                    "label": "Natural Language Processing"
+                }
+            ]
+        },
+        {
+            "id": "R166011",
+            "label": "Dataset for Named Entity Recognition",
+            "research_fields": [
+                {
+                    "id": "R132",
+                    "label": "Computer Sciences"
+                },
+                {
+                    "id": "R322",
+                    "label": "Computational Linguistics"
+                },
+                {
+                    "id": "R145261",
+                    "label": "Natural Language Processing"
+                }
+            ]
+        },
+        {
+            "id": "R166612",
+            "label": "Video production",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R166617",
+            "label": "Quantity",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R166623",
+            "label": "Quantity Value",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R166719",
+            "label": "Software Mention Contributions in Scientific Articles",
+            "research_fields": [
+                {
+                    "id": "R107",
+                    "label": "Physical Sciences & Mathematics"
+                },
+                {
+                    "id": "R12",
+                    "label": "Life Sciences"
+                },
+                {
+                    "id": "R135",
+                    "label": "Databases/Information Systems"
+                },
+                {
+                    "id": "R194",
+                    "label": "Engineering"
+                },
+                {
+                    "id": "R137679",
+                    "label": "Operating, Communication, Database and Distributed Systems"
+                },
+                {
+                    "id": "R137681",
+                    "label": "Information Systems, Process and Knowledge Management"
+                },
+                {
+                    "id": "R145261",
+                    "label": "Natural Language Processing"
+                }
+            ]
+        },
+        {
+            "id": "R166722",
+            "label": "Software template",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R166778",
+            "label": "Unit",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R166819",
+            "label": "Guide",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R171792",
+            "label": "Video Object",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R171811",
+            "label": "Video Application",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R171822",
+            "label": "Video application context",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R172526",
+            "label": "Video process",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R172536",
+            "label": "study",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R172606",
+            "label": "Quantity kind",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R175463",
+            "label": "Test",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R178304",
+            "label": "Dataset",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R182248",
+            "label": "Food photo dataset",
+            "research_fields": [
+                {
+                    "id": "R133",
+                    "label": "Artificial Intelligence"
+                }
+            ]
+        },
+        {
+            "id": "R184022",
+            "label": "Xray spectroscopy",
+            "research_fields": [
+                {
+                    "id": "R175",
+                    "label": "Atomic, Molecular and Optical Physics"
+                }
+            ]
+        },
+        {
+            "id": "R185465",
+            "label": "Has location",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R186392",
+            "label": "LUBM evaluated SPARQL query",
+            "research_fields": [
+                {
+                    "id": "R278",
+                    "label": "Information Science"
+                }
+            ]
+        },
+        {
+            "id": "R186441",
+            "label": "Value Specification",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R186491",
+            "label": "Research Practices in RE Contribution",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R186701",
+            "label": "empirical social science research",
+            "research_fields": [
+                {
+                    "id": "R302",
+                    "label": "Economics"
+                },
+                {
+                    "id": "R354",
+                    "label": "Sociology"
+                },
+                {
+                    "id": "R373",
+                    "label": "Science and Technology Studies"
+                },
+                {
+                    "id": "R136187",
+                    "label": "Social Sciences"
+                }
+            ]
+        },
+        {
+            "id": "R186724",
+            "label": "Threats to Validity in RE Contribution",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R186737",
+            "label": "Data Collection Method in RE Contribution",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R186748",
+            "label": "Data Collection Method in RE Contribution",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R186763",
+            "label": "Research Questions in RE Contribution",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R187136",
+            "label": "survey",
+            "research_fields": [
+                {
+                    "id": "R302",
+                    "label": "Economics"
+                },
+                {
+                    "id": "R354",
+                    "label": "Sociology"
+                },
+                {
+                    "id": "R136187",
+                    "label": "Social Sciences"
+                }
+            ]
+        },
+        {
+            "id": "R187147",
+            "label": "record extraction",
+            "research_fields": [
+                {
+                    "id": "R302",
+                    "label": "Economics"
+                },
+                {
+                    "id": "R354",
+                    "label": "Sociology"
+                },
+                {
+                    "id": "R136187",
+                    "label": "Social Sciences"
+                }
+            ]
+        },
+        {
+            "id": "R187494",
+            "label": "impact of COVID-19 pandemic on academics",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R187648",
+            "label": "OCO for control",
+            "research_fields": [
+                {
+                    "id": "R109",
+                    "label": "Control Theory"
+                }
+            ]
+        },
+        {
+            "id": "R187801",
+            "label": "Inferential statistics in RE Contribution",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R187805",
+            "label": "Hypothesis in RE Contribution",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R187812",
+            "label": "Measures of frequency in RE Contribution",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R187815",
+            "label": "Descriptive Statistics in RE Contribution",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R187817",
+            "label": "Data Analysis Method in RE Contribution",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R188008",
+            "label": "Subquestion in RE Contribution",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R188024",
+            "label": "Research Question Answer in RE Contribution",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R188027",
+            "label": "Measures of Central Tendency in RE Contribution",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R188031",
+            "label": "Measures of Dispersion or Variation in RE Contribution",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R188035",
+            "label": "Measures of Position in RE Contribution",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R188038",
+            "label": "Machine Learning in RE Contribution",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R188042",
+            "label": "Metrics in RE Contribution",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R188223",
+            "label": "LUBM Query",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R188448",
+            "label": "Encryption",
+            "research_fields": [
+                {
+                    "id": "R112117",
+                    "label": "Cryptography and Security"
+                }
+            ]
+        },
+        {
+            "id": "R188524",
+            "label": "Interview in RE Contribution",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R188526",
+            "label": "Survey in RE Contribution",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R188611",
+            "label": "Data Type in RE Contribution",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R188614",
+            "label": "Research Data in RE Contribution",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R188709",
+            "label": "Hypothesis Type in RE Contribution",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R189671",
+            "label": "Mechanical properties of nacre inspired materials",
+            "research_fields": [
+                {
+                    "id": "R254",
+                    "label": "Materials Science and Engineering"
+                }
+            ]
+        },
+        {
+            "id": "R194212",
+            "label": "Ontology construction",
+            "research_fields": [
+                {
+                    "id": "R133",
+                    "label": "Artificial Intelligence"
+                },
+                {
+                    "id": "R141823",
+                    "label": "Semantic Web"
+                }
+            ]
+        },
+        {
+            "id": "R194267",
+            "label": "Ontology metric",
+            "research_fields": [
+                {
+                    "id": "R133",
+                    "label": "Artificial Intelligence"
+                },
+                {
+                    "id": "R141823",
+                    "label": "Semantic Web"
+                }
+            ]
+        },
+        {
+            "id": "R195331",
+            "label": "process of LULC",
+            "research_fields": [
+                {
+                    "id": "R145",
+                    "label": "Environmental Sciences"
+                }
+            ]
+        },
+        {
+            "id": "R195759",
+            "label": "Ontology and Knowledge Graphs integration",
+            "research_fields": [
+                {
+                    "id": "R133",
+                    "label": "Artificial Intelligence"
+                },
+                {
+                    "id": "R141823",
+                    "label": "Semantic Web"
+                }
+            ]
+        },
+        {
+            "id": "R198132",
+            "label": "Measurement values with condition",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R198136",
+            "label": "Food recommendation",
+            "research_fields": [
+                {
+                    "id": "R133",
+                    "label": "Artificial Intelligence"
+                }
+            ]
+        },
+        {
+            "id": "R198141",
+            "label": "Material of Nacre-inspired composite",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R198658",
+            "label": "Nacre mechanics template",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R201191",
+            "label": "Substrate template",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R201195",
+            "label": "coating template",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R201201",
+            "label": "solvent template",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R201204",
+            "label": "oxygen barrier template",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R201208",
+            "label": "water barrier",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R201449",
+            "label": "Food Composition Table (FCT) description",
+            "research_fields": [
+                {
+                    "id": "R278",
+                    "label": "Information Science"
+                },
+                {
+                    "id": "R141823",
+                    "label": "Semantic Web"
+                }
+            ]
+        },
+        {
+            "id": "R201467",
+            "label": "performance metrics",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R201585",
+            "label": "Food Composition Table (FCT) dataset",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R201946",
+            "label": "Template for the design and/or fabrication of diffractive optical elements",
+            "research_fields": [
+                {
+                    "id": "R184",
+                    "label": "Optics"
+                }
+            ]
+        },
+        {
+            "id": "R201957",
+            "label": "Description of design and/or fabrication of a diffractive optical element",
+            "research_fields": [
+                {
+                    "id": "R184",
+                    "label": "Optics"
+                }
+            ]
+        },
+        {
+            "id": "R201978",
+            "label": "Design parameters of a diffractive optical element",
+            "research_fields": [
+                {
+                    "id": "R184",
+                    "label": "Optics"
+                }
+            ]
+        },
+        {
+            "id": "R201992",
+            "label": "Algorithm of the design",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R202002",
+            "label": "Horizontal and vertical quantities",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R202047",
+            "label": "Metasurface cell of diffractive optical element",
+            "research_fields": [
+                {
+                    "id": "R184",
+                    "label": "Optics"
+                }
+            ]
+        },
+        {
+            "id": "R202048",
+            "label": "Structure of a metasurface cell",
+            "research_fields": [
+                {
+                    "id": "R184",
+                    "label": "Optics"
+                }
+            ]
+        },
+        {
+            "id": "R202062",
+            "label": "Resulting quantities from a diffractive optical element",
+            "research_fields": [
+                {
+                    "id": "R184",
+                    "label": "Optics"
+                }
+            ]
+        },
+        {
+            "id": "R203428",
+            "label": "Life cycle sustainability assessment of vehicles",
+            "research_fields": [
+                {
+                    "id": "R137685",
+                    "label": "Urbanism, Spatial Planning, Transportation and Infrastructure Planning, Landscape Planning"
+                }
+            ]
+        },
+        {
+            "id": "R203645",
+            "label": "Life Cycle costs for vehicles",
+            "research_fields": [
+                {
+                    "id": "R137685",
+                    "label": "Urbanism, Spatial Planning, Transportation and Infrastructure Planning, Landscape Planning"
+                }
+            ]
+        },
+        {
+            "id": "R206311",
+            "label": "Proportions of electricity generation in the country  (v2)",
+            "research_fields": [
+                {
+                    "id": "R137685",
+                    "label": "Urbanism, Spatial Planning, Transportation and Infrastructure Planning, Landscape Planning"
+                }
+            ]
+        },
+        {
+            "id": "R209291",
+            "label": "Climate Sensitivity",
+            "research_fields": [
+                {
+                    "id": "R169",
+                    "label": "Climate"
+                }
+            ]
+        },
+        {
+            "id": "R209505",
+            "label": "Change of Environmental Impacts",
+            "research_fields": [
+                {
+                    "id": "R137685",
+                    "label": "Urbanism, Spatial Planning, Transportation and Infrastructure Planning, Landscape Planning"
+                }
+            ]
+        },
+        {
+            "id": "R210473",
+            "label": "Fidelity",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R210476",
+            "label": "Costs",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R35062",
+            "label": "Location",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R35077",
+            "label": "Confidence interval (95%)",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R35087",
+            "label": "Time interval",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R38098",
+            "label": "Neural Model Hyperparameters",
+            "research_fields": [
+                {
+                    "id": "R104",
+                    "label": "Bioinformatics"
+                },
+                {
+                    "id": "R132",
+                    "label": "Computer Sciences"
+                },
+                {
+                    "id": "R278",
+                    "label": "Information Science"
+                }
+            ]
+        },
+        {
+            "id": "R38147",
+            "label": "Comparisons with Existing Machine Learning (ML) Models",
+            "research_fields": [
+                {
+                    "id": "R104",
+                    "label": "Bioinformatics"
+                },
+                {
+                    "id": "R132",
+                    "label": "Computer Sciences"
+                },
+                {
+                    "id": "R278",
+                    "label": "Information Science"
+                }
+            ]
+        },
+        {
+            "id": "R38248",
+            "label": "Task Dataset Metric Score",
+            "research_fields": [
+                {
+                    "id": "R104",
+                    "label": "Bioinformatics"
+                },
+                {
+                    "id": "R132",
+                    "label": "Computer Sciences"
+                },
+                {
+                    "id": "R133",
+                    "label": "Artificial Intelligence"
+                },
+                {
+                    "id": "R278",
+                    "label": "Information Science"
+                }
+            ]
+        },
+        {
+            "id": "R40006",
+            "label": "Basic reproduction number estimate",
+            "research_fields": [
+                {
+                    "id": "R12",
+                    "label": "Life Sciences"
+                }
+            ]
+        },
+        {
+            "id": "R44412",
+            "label": "Infectious agent population",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R44415",
+            "label": "Basic reproduction number estimate value specification",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R44552",
+            "label": "Comparison Related Figure",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R44557",
+            "label": "Comparison Related Resource",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R44665",
+            "label": "Predicate",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R44667",
+            "label": "Job Analysis",
+            "research_fields": [
+                {
+                    "id": "R370",
+                    "label": "Work, Economy and Organizations"
+                }
+            ]
+        },
+        {
+            "id": "R46269",
+            "label": "Case fatality rate estimate value specification",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R46273",
+            "label": "Case fatality rate estimate",
+            "research_fields": [
+                {
+                    "id": "R12",
+                    "label": "Life Sciences"
+                }
+            ]
+        },
+        {
+            "id": "R48000",
+            "label": "Problem",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R48046",
+            "label": "Total cases worldwide",
+            "research_fields": [
+                {
+                    "id": "R57",
+                    "label": "Virology"
+                }
+            ]
+        },
+        {
+            "id": "R48214",
+            "label": "Global Mean Sea Level Rise Projections",
+            "research_fields": [
+                {
+                    "id": "R167",
+                    "label": "Oceanography and Atmospheric Sciences and Meteorology"
+                },
+                {
+                    "id": "R169",
+                    "label": "Climate"
+                }
+            ]
+        },
+        {
+            "id": "R48451",
+            "label": "SVM Model Hyperparameters",
+            "research_fields": [
+                {
+                    "id": "R132",
+                    "label": "Computer Sciences"
+                },
+                {
+                    "id": "R133",
+                    "label": "Artificial Intelligence"
+                },
+                {
+                    "id": "R278",
+                    "label": "Information Science"
+                }
+            ]
+        },
+        {
+            "id": "R49156",
+            "label": "Estimated value",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R49174",
+            "label": "Observed value",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R49194",
+            "label": "Occupant's perception and behaviour",
+            "research_fields": [
+                {
+                    "id": "R194",
+                    "label": "Engineering"
+                }
+            ]
+        },
+        {
+            "id": "R49207",
+            "label": "Occupants results",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R49212",
+            "label": "Occupants experimental detail",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R49244",
+            "label": "Occupants participants specification",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R49249",
+            "label": "Occupants buildings specification ",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R49252",
+            "label": "Occupants offices specification",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R49264",
+            "label": "Occupants building system",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R49270",
+            "label": "Occupants study location",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R49308",
+            "label": "SEIR",
+            "research_fields": [
+                {
+                    "id": "R12",
+                    "label": "Life Sciences"
+                }
+            ]
+        },
+        {
+            "id": "R49477",
+            "label": "Radiant energy",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R49564",
+            "label": "Time duration",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R49567",
+            "label": "Radiant energy",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R49599",
+            "label": "Device",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R49622",
+            "label": "Radiant exposure",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R51362",
+            "label": "limiting similarity hypothesis",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R51438",
+            "label": "Common Template",
+            "research_fields": [
+                {
+                    "id": "R132",
+                    "label": "Computer Sciences"
+                },
+                {
+                    "id": "R194",
+                    "label": "Engineering"
+                }
+            ]
+        },
+        {
+            "id": "R52156",
+            "label": "Meter measurement",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R52190",
+            "label": "Transient absorption spectroscopy",
+            "research_fields": [
+                {
+                    "id": "R12",
+                    "label": "Life Sciences"
+                },
+                {
+                    "id": "R122",
+                    "label": "Chemistry"
+                }
+            ]
+        },
+        {
+            "id": "R52212",
+            "label": "Solution sample",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R52218",
+            "label": "Liter measurement",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R52221",
+            "label": "Mass measurement",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R52233",
+            "label": "Substance",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R52237",
+            "label": "Meter measurement range",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R52240",
+            "label": "Solid sample",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R52243",
+            "label": "Transient absorption",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R52250",
+            "label": "Duration of absorption",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R54009",
+            "label": "Climate sensitivity",
+            "research_fields": [
+                {
+                    "id": "R167",
+                    "label": "Oceanography and Atmospheric Sciences and Meteorology"
+                },
+                {
+                    "id": "R169",
+                    "label": "Climate"
+                }
+            ]
+        },
+        {
+            "id": "R54875",
+            "label": "Climate response",
+            "research_fields": [
+                {
+                    "id": "R167",
+                    "label": "Oceanography and Atmospheric Sciences and Meteorology"
+                },
+                {
+                    "id": "R169",
+                    "label": "Climate"
+                }
+            ]
+        },
+        {
+            "id": "R69159",
+            "label": "Doppeltes Mandat der Jugendarbeit",
+            "research_fields": [
+                {
+                    "id": "R356",
+                    "label": "Family, Life Course, and Society"
+                }
+            ]
+        },
+        {
+            "id": "R69198",
+            "label": "Dataset of Concepts or Named Entities",
+            "research_fields": [
+                {
+                    "id": "R133",
+                    "label": "Artificial Intelligence"
+                },
+                {
+                    "id": "R278",
+                    "label": "Information Science"
+                },
+                {
+                    "id": "R145261",
+                    "label": "Natural Language Processing"
+                }
+            ]
+        },
+        {
+            "id": "R70247",
+            "label": "BioAssay",
+            "research_fields": [
+                {
+                    "id": "R57",
+                    "label": "Virology"
+                }
+            ]
+        },
+        {
+            "id": "R70785",
+            "label": "Research Field",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R70894",
+            "label": "Class",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R70898",
+            "label": "Dataset",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R74758",
+            "label": "Experiment",
+            "research_fields": [
+                {
+                    "id": "R140",
+                    "label": "Software Engineering"
+                }
+            ]
+        },
+        {
+            "id": "R76209",
+            "label": "Team Subtask Contribution Description",
+            "research_fields": [
+                {
+                    "id": "R132",
+                    "label": "Computer Sciences"
+                },
+                {
+                    "id": "R133",
+                    "label": "Artificial Intelligence"
+                },
+                {
+                    "id": "R278",
+                    "label": "Information Science"
+                }
+            ]
+        },
+        {
+            "id": "R76795",
+            "label": "Crowd Intelligence",
+            "research_fields": [
+                {
+                    "id": "R140",
+                    "label": "Software Engineering"
+                }
+            ]
+        },
+        {
+            "id": "R76809",
+            "label": "User Feedback Classification Algorithm Result",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        },
+        {
+            "id": "R77101",
+            "label": "Standard's template",
+            "research_fields": [
+                {
+                    "id": "",
+                    "label": ""
+                }
+            ]
+        }
+    ]
+}
