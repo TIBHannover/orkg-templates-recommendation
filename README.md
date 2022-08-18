@@ -37,26 +37,24 @@ with same (or very similar) distribution as the templated ones. Papers abstracts
 #### Statistics 
 > The following statistics are manually summarized based on the output of `src.data.main.py` script.
 
-| Templates | Templated Papers | Neutral Papers | Templates Research Fields | Neutral Research Fields |
-|-----------|------------------|----------------|---------------------------|-------------------------|
-| 23        | 487              | 487            | 25                        | 25                      |
+|  Templates  |  Templated Papers  |  Neutral Papers  |  Templates Research Fields  |  Neutral Research Fields  |
+|:-----------:|:------------------:|:----------------:|:---------------------------:|:-------------------------:|
+|     23      |        487         |       487        |             25              |            25             |
 
 
-| \               | Training (supervised) | Validation (supervised) | Training (unsupervised) | Test Set |
-|-----------------|-----------------------|-------------------------|-------------------------|----------|
-| Entailments     | 351                   | 39                      | 390                     | 92       |
-| Contradictions  | 1230                  | 137                     | 0                       | 0        |
-| Neutrals        | 351                   | 39                      | 390                     | 97       |
-| Total           | 1932                  | 215                     | 780                     | 189      |
+|         \         |  Training (supervised)  |  Validation (supervised)  |  Training (unsupervised)  |  Test Set  |
+|:-----------------:|:-----------------------:|:-------------------------:|:-------------------------:|:----------:|
+|    Entailments    |           351           |            39             |            390            |     92     |
+|  Contradictions   |          1230           |            137            |             0             |     0      |
+|     Neutrals      |           351           |            39             |            390            |     97     |
+|       Total       |          1932           |            215            |            780            |    189     |
 
 #### Plots
 
-| Original                                                                                                                         | Preview                                                                                           |
-|----------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| [All papers distribution over research fields](./data/processed/all_papers_research_fields.png)                                  | <img src="./data/processed/all_papers_research_fields.png"  width="280" height="150">             |
-| [Templated papers distribution over research fields](./data/processed/papers_research_fields.png)                                | <img src="./data/processed/papers_research_fields.png"  width="280" height="150">                 |
-| [Neutral papers distribution over research fields](./data/processed/neutral_papers_research_fields.png)                          | <img src="./data/processed/neutral_papers_research_fields.png"  width="280" height="150">         |
-| [Templates distribution over research fields with number of papers](./data/processed/templates_research_fields_intersection.png) | <img src="./data/processed/templates_research_fields_intersection.png"  width="280" height="150"> |
+|                                                                                                                                                                                                 |                                                                                                                                                                                                                           |
+|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|     <img src="./data/processed/all_papers_research_fields.png"  width="280" height="150"><figcaption align = "center">Fig.1 - All papers distribution over research fields</b></figcaption>     |                <img src="./data/processed/papers_research_fields.png"  width="280" height="150"><br/><figcaption align = "center">Fig.2 - Templated papers distribution over research fields</figcaption>                 |
+| <img src="./data/processed/neutral_papers_research_fields.png"  width="280" height="150"><figcaption align = "center">Fig.3 - Neutral papers distribution over research fields</b></figcaption> | <img src="./data/processed/templates_research_fields_intersection.png"  width="280" height="150"><br/><figcaption align = "center">Fig.4 - Templates distribution over research fields with number of papers</figcaption> |
 
 ### Evaluation
 
@@ -68,22 +66,21 @@ the normalization.
 
 #### Results
 
-| \             | Precision | Recall | F1-Score |
-|---------------|-----------|--------|----------|
-| Baseline      | 42.8%     | 42.8%  | 42.8%    |
-| Baseline_full | 8.9%      | 8.9%   | 8.9%     |
-| Elasticsearch | 29.1%     | 29.1%  | 29.1%    |
-| SciBERT       | 64.1%     | 62.4%  | 63.2%    |
+|        \        |  Precision  |  Recall  |  F1-Score  |
+|:---------------:|:-----------:|:--------:|:----------:|
+|    Baseline     |    42.8%    |  42.8%   |   42.8%    |
+|  Baseline_full  |    8.9%     |   8.9%   |    8.9%    |
+|  Elasticsearch  |    29.1%    |  29.1%   |   29.1%    |
+|     SciBERT     |    64.1%    |  62.4%   |   63.2%    |
 
 
 #### Plots
 
-| Original                                                                                                          | Preview                                                                          |
-|-------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
-| [Baseline F1-score over research fields](./data/processed/baseline_results.png)                                   | <img src="./data/processed/baseline_results.png"  width="280" height="150">      |
-| [Baseline_full F1-score over research fields](./data/processed/baseline_full_results.png)                         | <img src="./data/processed/baseline_full_results.png"  width="280" height="150"> |
-| [ES F1-score over research fields](./data/processed/es_results.png)                                               | <img src="./data/processed/es_results.png"  width="280" height="150">            |
-| [SciBERT F1-score over research fields](./data/processed/scibert_results.png)                                     | <img src="./data/processed/scibert_results.png"  width="280" height="150">       |
+|                                                                                                                                                                     |                                                                                                                                                                                    |
+|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| <img src="./data/processed/baseline_results.png"  width="280" height="150"><figcaption align = "center">Fig.5 - Baseline F1-score over research fields</figcaption> | <img src="./data/processed/baseline_full_results.png"  width="280" height="150"><br/><figcaption align = "center">Fig.6 - Baseline_full F1-score over research fields</figcaption> |
+|       <img src="./data/processed/es_results.png"  width="280" height="150"><figcaption align = "center">Fig.7 - ES F1-score over research fields</figcaption>       |       <img src="./data/processed/scibert_results.png"  width="280" height="150"><br/><figcaption align = "center">Fig.8 - SciBERT F1-score over research fields</figcaption>       |
+
 
 ### Limitations 
 Training the SciBERT model cannot be done on a CPU since it includes a lot of computations.
