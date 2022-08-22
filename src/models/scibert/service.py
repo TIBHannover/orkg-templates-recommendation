@@ -11,9 +11,9 @@ from src.util.io import Reader
 
 class TemplateSimilarityPredictor:
     __instance = None
-    BERT_TOKENIZER_PATH ='allenai/scibert_scivocab_uncased'
+    BERT_TOKENIZER_PATH = 'allenai/scibert_scivocab_uncased'
     BERT_NLI_PATH = os.path.join(MODELS_DIR, 'orkgnlp-templates-recommendation-scibert')
-    DATASET_PATH = os.path.join(PROCESSED_DATA_DIR, 'dataset.json')
+    PREMISES_PATH = os.path.join(PROCESSED_DATA_DIR, 'dataset_premises.json')
     MAX_SEQUENCE_LENGTH = 512
     CLASSES = {
         '0': 'entailment',
@@ -30,6 +30,7 @@ class TemplateSimilarityPredictor:
         self.device = torch.device('cpu')
         self.bert_tokenizer = BertTokenizer.from_pretrained(TemplateSimilarityPredictor.BERT_TOKENIZER_PATH)
         self.bert_nli_model = BertForSequenceClassification.from_pretrained(TemplateSimilarityPredictor.BERT_NLI_PATH)
+        self.premises = Reader.read_json(TemplateSimilarityPredictor.PREMISES_PATH)
 
     @staticmethod
     def get_instance():
@@ -41,14 +42,9 @@ class TemplateSimilarityPredictor:
     def predict_similar_templates(self, q):
         similar_templates = []
 
-        # We iterate the templates the model trained on to produce the class in the service perspective.
-        data = Reader.read_json(TemplateSimilarityPredictor.DATASET_PATH)
-
-        for template in data['templates']:
-            premise = '{} {}'.format(
-                template['label'],
-                ' '.join([property for property in template['properties']])
-            )
+        # We iterate the templates the model trained on to produce the class from the service perspective.
+        for template in self.premises['templates']:
+            premise = template['premise']
 
             label, score = self.predict_similar_template(premise, q)
 

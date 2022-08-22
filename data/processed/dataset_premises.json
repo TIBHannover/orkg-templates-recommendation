@@ -1,0 +1,119 @@
+{
+    "templates": [
+        {
+            "id": "R138077",
+            "label": "Ontology learning from data sources",
+            "premise": "Ontology learning from data sources has dataset Application Domain Input format Output format Accuracy F1-score Precision Knowledge source has Data Source Learning purpose Terms learning Axiom learning Properties learning Properties hierarchy learning Rule learning Class hierarchy learning Learning method Learning tool Evaluation metrics Related work Validation tool Training corpus Testing corpus Class learning Implemented technologies Relationships learning Instance learning Taxonomy learning Validation comment Assessment of acquired knowledge Recall F-measure"
+        },
+        {
+            "id": "R146876",
+            "label": "Organic solar cells",
+            "premise": "Organic solar cells Mobility Donor Acceptor LUMO HOMO Energy band gap Open circuit voltage, Voc Short-circuit current density, Jsc Fill factor, FF Power conversion efficiency"
+        },
+        {
+            "id": "R149061",
+            "label": "Biodiversity inventories with DNA barcoding",
+            "premise": "Biodiversity inventories with DNA barcoding Biogeographical region Locus (genetics) higher number estimated species higher number estimated species (Method) No. of estimated species No. of estimated species (Method) lower number estimated species lower number estimated species (Method) Class (Taxonomy - biology) DNA sequencing technology Phylum (Biology) No. of potential undescribed species Study Location  Order (Taxonomy - biology) No. of samples (sequences) Studied taxonomic group (Biology) Number of identified species with current taxonomy"
+        },
+        {
+            "id": "R150089",
+            "label": "Epidemiological surveillance systems design and implementation",
+            "premise": "Epidemiological surveillance systems design and implementation Software Used Software development approach Related work Epidemiological surveillance system purpose Epidemiological surveillance process Epidemiological surveillance users Statistical analysis techniques Epidemiological surveillance architecture Epidemiological software development approach Advantage provided by the system Limit of the system"
+        },
+        {
+            "id": "R150595",
+            "label": "Tailored Forming Contribution",
+            "premise": "Tailored Forming Contribution Has result research problem has material realizes"
+        },
+        {
+            "id": "R152828",
+            "label": "Xray laser pumped",
+            "premise": "Xray laser pumped has system qualities"
+        },
+        {
+            "id": "R154390",
+            "label": "Lignin decomposition",
+            "premise": "Lignin decomposition substrate catalyst has temperature value Solvent Pressure Reactor Conversion Product"
+        },
+        {
+            "id": "R155844",
+            "label": "Photocatalysts",
+            "premise": "Photocatalysts Wavelength of maximum absorption Energy band gap Photocatalyst Wavelength of maximum emission Emission lifetime Ground-state oxidation potential Ground-state reduction potential Excited-state oxidation potential Excited-state reduction potential"
+        },
+        {
+            "id": "R156306",
+            "label": "Research objective",
+            "premise": "Research objective Research objective"
+        },
+        {
+            "id": "R159441",
+            "label": "City Digital Twin Potentials",
+            "premise": "City Digital Twin Potentials Visualization Situational Awareness Planning and Prediction Integration and Collaboration Data management"
+        },
+        {
+            "id": "R160259",
+            "label": "Digital city twin review",
+            "premise": "Digital city twin review Application area"
+        },
+        {
+            "id": "R161545",
+            "label": "Recycling methods",
+            "premise": "Recycling methods method Recycling type has property"
+        },
+        {
+            "id": "R161736",
+            "label": "Xray laser applications",
+            "premise": "Xray laser applications Paper type Research objective has system qualities"
+        },
+        {
+            "id": "R172526",
+            "label": "Video process",
+            "premise": "Video process has study research problem Application  production"
+        },
+        {
+            "id": "R178304",
+            "label": "Dataset",
+            "premise": "Dataset inter-annotator agreement alternateName assesses creator description disambiguatingDescription encoding exampleOfWork genre inLanguage isBasedOn license name sameAs size sourceOrganization url version"
+        },
+        {
+            "id": "R182248",
+            "label": "Food photo dataset",
+            "premise": "Food photo dataset Year Name Annotation Number of images Task Number of classes Acquisition type"
+        },
+        {
+            "id": "R184022",
+            "label": "Xray spectroscopy",
+            "premise": "Xray spectroscopy Paper type Research objective has system qualities"
+        },
+        {
+            "id": "R186491",
+            "label": "Research Practices in RE Contribution",
+            "premise": "Research Practices in RE Contribution Data analysis research  question  Threat to validity data collection method research paradigm research question answer"
+        },
+        {
+            "id": "R187648",
+            "label": "OCO for control",
+            "premise": "OCO for control research problem Theoretical guarantees Has application in data-driven approach has constraints Type of considered system Measurement noise Process noise"
+        },
+        {
+            "id": "R194212",
+            "label": "Ontology construction",
+            "premise": "Ontology construction method Methodology Tool has URI data source research problem evaluation Process name people involved serialization language"
+        },
+        {
+            "id": "R198658",
+            "label": "Nacre mechanics template",
+            "premise": "Nacre mechanics template Has method Has result research problem has material"
+        },
+        {
+            "id": "R40006",
+            "label": "Basic reproduction number estimate",
+            "premise": "Basic reproduction number estimate Time period Basic reproduction number location"
+        },
+        {
+            "id": "R52190",
+            "label": "Transient absorption spectroscopy",
+            "premise": "Transient absorption spectroscopy Has participating device Has participating person Has gaseous sample input Has solution sample input Has solid sample input Has radiant energy input Has output"
+        }
+    ]
+}
