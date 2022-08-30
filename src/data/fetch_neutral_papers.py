@@ -77,30 +77,28 @@ def fetch_rest_neutral_papers(paper_ids, neutral_paper_ids, papers_dump):
     orkg_papers = query(TRIPLE_STORE_URL, PAPERS_QUERY)
 
     while len(rest_neutral_papers) + len(neutral_paper_ids) < len(paper_ids):
-        orkg_paper = orkg_papers.sample(n=1)
+        orkg_paper = orkg_papers.sample(n=1).iloc[0]
 
         # papers don't use templates and have not been seen before
-        if orkg_paper[0] in paper_ids + neutral_paper_ids + rest_neutral_paper_ids:
+        if orkg_paper.loc['paper'] in paper_ids + neutral_paper_ids + rest_neutral_paper_ids:
             continue
 
-        neutral_paper = {
-            'id': uri_to_id(orkg_paper.loc['paper']),
-            'label': orkg_paper.loc['paper_title'],
-            'doi': orkg_paper.loc['doi'],
-            'research_field': {
-                'id': uri_to_id(orkg_paper.loc['research_field']),
-                'label': orkg_paper.loc['research_field_label']
-            },
-            'abstract': papers_dump[papers_dump.uri == orkg_paper.loc['paper']].processed_abstract.iloc[0]
-        }
+        if len(papers_dump[papers_dump.uri == orkg_paper.loc['paper']].processed_abstract) != 0 \
+                and papers_dump[papers_dump.uri == orkg_paper.loc['paper']].processed_abstract.iloc[0]:
+            neutral_paper = {
+                'id': uri_to_id(orkg_paper.loc['paper']),
+                'label': orkg_paper.loc['paper_title'],
+                'doi': orkg_paper.loc['doi'],
+                'research_field': {
+                    'id': uri_to_id(orkg_paper.loc['research_field']),
+                    'label': orkg_paper.loc['research_field_label']
+                },
+                'abstract': papers_dump[papers_dump.uri == orkg_paper.loc['paper']].processed_abstract.iloc[0]
+            }
 
-        # ignore papers without abstracts
-        if not neutral_paper['abstract']:
-            continue
-
-        print('{}/{}'.format(len(rest_neutral_papers) + len(neutral_paper_ids) + 1, len(paper_ids)))
-        rest_neutral_papers.append(neutral_paper)
-        rest_neutral_paper_ids.append(orkg_paper.loc['paper'])
+            print('{}/{}'.format(len(rest_neutral_papers) + len(neutral_paper_ids) + 1, len(paper_ids)))
+            rest_neutral_papers.append(neutral_paper)
+            rest_neutral_paper_ids.append(orkg_paper.loc['paper'])
 
     return rest_neutral_papers, rest_neutral_paper_ids
 
