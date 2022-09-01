@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 
-from src import TRIPLE_STORE_URL, RAW_DATA_DIR
+from src import TRIPLE_STORE_URL, RAW_DATA_DIR, ORKG_PAPERS_DUMP_URL
 from src.data import fetch_templated_papers
 from src.data.sparql.queries import PAPERS_BY_RESEARCH_FIELD_QUERY, PAPERS_QUERY
 from src.data.sparql.service import query
@@ -103,10 +103,7 @@ def fetch_rest_neutral_papers(paper_ids, neutral_paper_ids, papers_dump):
     return rest_neutral_papers, rest_neutral_paper_ids
 
 
-def main(templated_papers, templated_paper_ids):
-    # TODO: automatically download the orkg_papers dump
-    papers_dump = pd.read_csv(os.path.join(RAW_DATA_DIR, 'orkg_papers.csv')).fillna('')
-
+def main(templated_papers, templated_paper_ids, papers_dump):
     research_fields = extract_papers_research_fields(templated_papers)
 
     # papers that do not use any template and have the same distribution as the previous papers
@@ -128,5 +125,6 @@ def main(templated_papers, templated_paper_ids):
 
 
 if __name__ == '__main__':
-    papers, paper_ids = fetch_templated_papers.main()
-    main(papers, paper_ids)
+    dump = pd.read_csv(ORKG_PAPERS_DUMP_URL).fillna('')
+    papers, paper_ids = fetch_templated_papers.main(dump)
+    main(papers, paper_ids, dump)

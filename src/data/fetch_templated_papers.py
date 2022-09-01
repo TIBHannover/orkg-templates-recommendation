@@ -2,7 +2,7 @@ import os
 
 import pandas as pd
 
-from src import TRIPLE_STORE_URL, RAW_DATA_DIR
+from src import TRIPLE_STORE_URL, RAW_DATA_DIR, ORKG_PAPERS_DUMP_URL
 from src.data.sparql.queries import TEMPLATED_PAPERS
 from src.data.sparql.service import query
 from src.util.io import Writer
@@ -60,10 +60,8 @@ def to_json(df, papers_dump):
     return filtered_templated_papers, list(set(templated_paper_ids))
 
 
-def main():
-    # TODO: automatically download the orkg_papers dump
+def main(papers_dump):
     df = query(TRIPLE_STORE_URL, TEMPLATED_PAPERS)
-    papers_dump = pd.read_csv(os.path.join(RAW_DATA_DIR, 'orkg_papers.csv')).fillna('')
     templated_papers, templated_paper_ids = to_json(df, papers_dump)
     Writer.write_json({'templates': templated_papers}, os.path.join(RAW_DATA_DIR, 'templated_papers.json'))
 
@@ -71,4 +69,5 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    dump = pd.read_csv(ORKG_PAPERS_DUMP_URL).fillna('')
+    main(dump)

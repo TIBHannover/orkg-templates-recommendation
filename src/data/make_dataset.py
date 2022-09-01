@@ -1,6 +1,8 @@
 import os
 
-from src import PROCESSED_DATA_DIR
+import pandas as pd
+
+from src import PROCESSED_DATA_DIR, ORKG_PAPERS_DUMP_URL
 from src.data import fetch_templated_papers, fetch_baseline_templates
 from src.data import fetch_neutral_papers
 from src.util.io import Writer
@@ -25,8 +27,10 @@ def extract_premises(templated_papers):
 
 def main():
     fetch_baseline_templates.main()
-    templated_papers, templated_paper_ids = fetch_templated_papers.main()
-    neutral_papers, neutral_paper_ids = fetch_neutral_papers.main(templated_papers, templated_paper_ids)
+
+    papers_dump = pd.read_csv(ORKG_PAPERS_DUMP_URL).fillna('')
+    templated_papers, templated_paper_ids = fetch_templated_papers.main(papers_dump)
+    neutral_papers, neutral_paper_ids = fetch_neutral_papers.main(templated_papers, templated_paper_ids, papers_dump)
 
     dataset = {'templates': templated_papers, 'neutral_papers': neutral_papers}
     Writer.write_json(
