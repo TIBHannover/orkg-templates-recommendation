@@ -32,7 +32,7 @@ two datasets:
 ### Dataset
 The dataset is created by fetching templated papers (ORKG papers structured (even partially) using ORKG templates) and untemplated papers
 with same (or very similar) distribution as the templated ones. Papers abstracts were fetched from the
-[ORKG papers dump](TODO_direct_download_link).
+[ORKG papers dump](https://gitlab.com/TIBHannover/orkg/orkg-abstracts/).
 
 #### Statistics 
 > The following statistics are manually summarized based on the output of `src.data.main.py` script.
